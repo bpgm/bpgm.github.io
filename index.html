@@ -15,8 +15,8 @@
 <body>
 
 	<label>Adresse courriel du contact</label>
-	<input type="text" style="width:300px;" />
-	<input type="button" value="Identifier le contact" />
+	<input id="email" type="text" style="width:300px;" />
+	<input type="button" value="Identifier le contact" onclick="DI.Push.Identify('f_EMail', document.getElementById('email').value);" />
 	<br/>
 	<input type="button" value="Set token" onclick="DI.Push.RequestPermission();"  />
 	
