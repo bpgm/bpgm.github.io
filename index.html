@@ -14,13 +14,11 @@
 
 <body>
 
-	<a onclick="DI.Push.RequestPermission();">
-		Je désire recevoir des notifications
-	</a>
+	<label>Adresse courriel du contact</label>
+	<input type="text" style="width:300px;" />
+	<input type="button" value="Identifier le contact" />
+	<br/>
+	<input type="button" value="Set token" onclick="DI.Push.RequestPermission();"  />
 	
-	<a onclick="DI.Push.Identify('f_EMail', 'firefox@dialoginsight.com');">
-	Associé à firefox
-	</a>
-
 </body>
 </html>
